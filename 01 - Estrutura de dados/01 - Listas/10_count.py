@@ -1,3 +1,5 @@
+#utilizado para contar quantas vezes um item aparece na lista
+
 cores = ["vermelho", "azul", "verde", "azul"]
 
 print(cores.count("vermelho"))  # 1
