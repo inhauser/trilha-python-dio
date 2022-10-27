@@ -1,3 +1,8 @@
+# sort faz uma ordenação.
+# reverse=True - ordena colocando a lista de trás para frente.
+# key=lambda x: len(x) - ordena pelo tamanho de cada item, do menor para o maior.
+# key=lambda x: lex(x), reverse=True - ordena pelo maior tamanho para o menor.
+
 linguagens = ["python", "js", "c", "java", "csharp"]
 linguagens.sort()  # ["c", "csharp", "java", "js", "python"]
 print(linguagens)
