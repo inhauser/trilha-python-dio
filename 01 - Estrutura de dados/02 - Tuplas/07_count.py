@@ -1,3 +1,5 @@
+# Métodos, funções
+
 cores = (
     "vermelho",
     "azul",
