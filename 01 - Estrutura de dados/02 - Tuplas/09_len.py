@@ -1,3 +1,5 @@
+#métodos , funções
+
 linguagens = (
     "python",
     "js",
