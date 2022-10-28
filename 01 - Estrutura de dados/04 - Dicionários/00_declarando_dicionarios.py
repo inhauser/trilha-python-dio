@@ -1,4 +1,5 @@
-# chave:valor - chave tem ques er imutável e pode ser, por ex, tupla. valor pode ser qquer tipo de objeto. Chave valor único. Dict (:) ou {:}
+# chave:valor - apenas a chave tem que ser imutável e pode ser, por ex, tupla. valor pode ser qquer tipo de objeto, e pode ser alterado. 
+#Chave valor único. Dict (:) ou {:}
 # para recuperar valor, faço a chamada plea chave.
 
 pessoa = {"nome": "Guilherme", "idade": 28}
