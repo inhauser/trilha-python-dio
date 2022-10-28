@@ -1,3 +1,7 @@
+# Método
+# Deixa atualizar o dicionário, podendo modificá-lo.
+# Se tiver um parâmetro chave:valor inexistente, ele adiciona.
+
 contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
 
 contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})
