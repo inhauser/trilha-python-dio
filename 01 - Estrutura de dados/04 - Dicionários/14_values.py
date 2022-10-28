@@ -1,5 +1,5 @@
 # Método
-# Retorna todos os valores das chaves, apenas os valores.
+# Retorna todos os valores das chaves, chave:valor.
 # Diferente do keys, o qual retorna apenas as chaves.
 
 contatos = {
