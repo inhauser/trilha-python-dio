@@ -1,3 +1,7 @@
+# Método
+# Uma forma "elegante" de saber se uma chave existe ou não no nosso dicionário.
+# Retorna True or False
+
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
@@ -16,3 +20,9 @@ print(resultado)
 
 resultado = "telefone" in contatos["giovanna@gmail.com"]  # True
 print(resultado)
+
+# Se não tivesse o keys, para retornar o mesmo resultado:
+# lista_chaves: list = contatos.keys()
+# lista_chaves.count("guilherme@gmail.com")
+# ou
+# count = lista_chaves.count("guilherme@gmail.com")
