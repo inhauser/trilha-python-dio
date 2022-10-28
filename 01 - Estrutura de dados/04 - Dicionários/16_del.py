@@ -1,3 +1,5 @@
+# Métodos
+# Passo o objeto que quero remover, inclusive a chave:valor inteira, se o caso.
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
