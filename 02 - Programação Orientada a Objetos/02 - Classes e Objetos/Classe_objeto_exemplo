@@ -1,0 +1,25 @@
+# CLASSE EXEMPLO
+
+class Cachorro: # características do objeto
+  def _init_(self, nome, cor acordado = True):
+      self.nome = nome
+      self.cor = cor
+      self.acordado = acordado
+  
+  def latir(self): # comportamento / métodos
+      print("Auau")
+      
+  def dormir(self): # comportaento / métodos
+      self.acordado = False
+      print("Zzzzz.....")
+      
+# OBJETO EXEMPLO
+
+cao_1 = Cachorro("chappie", "amarelo", False)
+cao_2 = Cachorro("Aladim", "branco e preto")
+
+cao_1.latir()
+
+print(cao_2.acordado)
+cao_2.dormir()
+print(cao_2.acordado)
