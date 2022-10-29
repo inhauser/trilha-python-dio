@@ -1,3 +1,8 @@
+# Parâmetros podem ser passados por posição, por posição e nome, ou por nome.
+# def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+#       positional only => positional or keyword => keyword only
+# Neste caso, exploraremos apenas a keyword only, "nomeados", excluindo as duas primeiras.
+
 def criar_carro(modelo, ano, placa, /, *, marca, motor, combustivel):
     print(modelo, ano, placa, marca, motor, combustivel)
 
