@@ -20,3 +20,7 @@ def exibir_resultado(a, b, funcao):
 exibir_resultado(10, 10, somar)  # O resultado da operação 10 + 10 = 20
 exibir_resultado(10, 10, subtrair)  # O resultado da operação 10 - 10 = 0
 exibir_resultado(10, 10, test)  # O resultado da operação 10*2 + 10*3 = 50
+
+op = somar
+
+print(op(1,23)) # resultado é 24
