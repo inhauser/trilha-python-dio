@@ -5,8 +5,11 @@
 def somar(a, b):
     return a + b
 
-def subtrair(a,b)
+def subtrair(a, b)
     return a - b
+
+def test(a, b)
+    return a*2 + b*3
 
 
 def exibir_resultado(a, b, funcao):
@@ -16,3 +19,4 @@ def exibir_resultado(a, b, funcao):
 
 exibir_resultado(10, 10, somar)  # O resultado da operação 10 + 10 = 20
 exibir_resultado(10, 10, subtrair)  # O resultado da operação 10 - 10 = 0
+exibir_resultado(10, 10, test)  # O resultado da operação 10*2 + 10*3 = 50
