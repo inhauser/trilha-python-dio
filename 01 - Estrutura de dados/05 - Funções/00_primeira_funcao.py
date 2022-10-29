@@ -1,3 +1,5 @@
+# Função é um bloco de código identificado por um nome e pode receber lista de parâmetros, que podem ou não ter valores padrões. Copnjunto de entradas e saídas.
+
 def exibir_mensagem():
     print("Olá mundo!")
 
