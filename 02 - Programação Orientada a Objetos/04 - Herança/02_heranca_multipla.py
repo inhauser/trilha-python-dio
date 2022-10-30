@@ -1,3 +1,7 @@
+# HERANÇA MÚLTIPLA
+# MRO: Method Resolution Order
+
+
 class Animal:
     def __init__(self, nro_patas):
         self.nro_patas = nro_patas
@@ -21,14 +25,22 @@ class Ave(Animal):
 class Gato(Mamifero):
     pass
 
+class FalarMixin: #utilizaremos no Django
+    def falar(self):
+        return "Oi estou falando"
 
-class Ornitorrinco(Mamifero, Ave):
+
+class Ornitorrinco(Mamifero, Ave, FalarMixin):
     def __init__(self, cor_bico, cor_pelo, nro_patas):
+        # print(Ornitorrinco.__mro__) # ordem que o interpretador usa para utilizar as classes e heranças.
+        # print(Ornitorrinco.mro())
+
         super().__init__(cor_pelo=cor_pelo, cor_bico=cor_bico, nro_patas=nro_patas)
 
 
-gato = Gato(nro_patas=4, cor_pelo="Preto")
+gato = Gato(nro_patas=4, cor_pelo="Preto") #kwargs precisa ser chave: valor e não posicional.
 print(gato)
 
-ornitorrinco = Ornitorrinco(nro_patas=2, cor_pelo="vermelho", cor_bico="laranja")
+ornitorrinco = Ornitorrinco(nro_patas=2, cor_pelo="vermelho", cor_bico="laranja") #kwargs precisa ser chave: valor e não posicional.
 print(ornitorrinco)
+print(ornitorrinco.falar())
