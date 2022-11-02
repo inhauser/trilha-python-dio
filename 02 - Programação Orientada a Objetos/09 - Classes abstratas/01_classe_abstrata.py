@@ -1,4 +1,20 @@
-from abc import ABC, abstractmethod, abstractproperty
+# INTERFACE
+# Interfaces definem o que uma classe deve fazer e não como.
+
+# Python tem interface?
+# É uma palavra reservada do Java. O Python não tem a palavra reservada, utilizando o conceito de classe abstrata (módulo ABC).
+# O conceito de interface é definir um contrato, onde são declarados os métodos (o que deve ser feito) e suas respectivas assinaturas. 
+# Em Python utilizamos classes abstratas para criar contratos. 
+# Classes abstratas não podem ser instanciadas.
+
+# MÓDULO ABC (Abstract Base Class)
+# Por padrão, o Python não fornece classes abstratas. 
+# O Python vem com um módulo que fornece a base para definir as classes abstratas, e o nome do módulo é ABC. 
+# O ABC funciona decorando métodos da classe base como abstratos e, em seguida, 
+# registrando classes concretas como implementações da base abstrata. 
+# Um método se torna abstrato quando decorado com @abstractmethod.
+
+from abc import ABC, abstractmethod, abstractproperty # importa do módulo abc a classe ABC
 
 
 class ControleRemoto(ABC):
